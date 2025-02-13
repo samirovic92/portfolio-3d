@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Bio} from "../../data/constants";
 import Typewirter from "typewriter-effect"
-import HeroImg from "../../images/me.jpg"
+import MyImg from "../../images/me.jpg"
 import PresentationBgAnimation from "../PresentationAnimation"
 import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
@@ -243,7 +243,7 @@ const Presentation = () => {
                     <PresentationRightContainer>
                         <motion.div {...headContentAnimation}>
                             <Tilt>
-                                <Img src={HeroImg} alt="Samir EL IDRISSI"></Img>
+                                <Img src={MyImg} alt="Samir EL IDRISSI"></Img>
                             </Tilt>
                         </motion.div>
                     </PresentationRightContainer>
