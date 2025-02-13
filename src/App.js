@@ -2,7 +2,7 @@ import styled, {ThemeProvider} from "styled-components";
 import {darkTheme} from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import {BrowserRouter} from "react-router-dom";
-import Hero from "./components/sections/Hero";
+import Presentation from "./components/sections/Presentation";
 
 const Body = styled.div`
     background-color: ${({theme}) => theme.bg};
@@ -18,7 +18,7 @@ function App() {
             <BrowserRouter>
                 <Navbar/>
                 <Body>
-                    <Hero></Hero>
+                    <Presentation></Presentation>
                 </Body>
             </BrowserRouter>
         </ThemeProvider>

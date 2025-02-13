@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Bio} from "../../data/constants";
 import Typewirter from "typewriter-effect"
 import HeroImg from "../../images/me.jpg"
-import HeroBgAnimation from "../HeroBgAnimation"
+import PresentationBgAnimation from "../PresentationAnimation"
 import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
 import {
@@ -13,7 +13,7 @@ import {
 } from "../../utils/motion";
 import StarCanvas from "../canvas/Stars";
 
-const HeroContainer = styled.div`
+const PresentationContainer = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
@@ -30,7 +30,7 @@ const HeroContainer = styled.div`
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `
-const HeroInnerContainer = styled.div`
+const PresentationInnerContainer = styled.div`
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@ const HeroInnerContainer = styled.div`
         flex-direction: column;
     }
 `
-const HeroLeftContainer = styled.div`
+const PresentationLeftContainer = styled.div`
     width: 100%;
     order: 1;
     @media (max-width: 960px) {
@@ -54,7 +54,7 @@ const HeroLeftContainer = styled.div`
         align-items: center;
     }
 `
-const HeroRightContainer = styled.div`
+const PresentationRightContainer = styled.div`
     width: 100%;
     order: 2;
     display: flex;
@@ -161,7 +161,7 @@ const ResumeButton = styled.a`
     &:hover {
         transform: scale(1.05);
         transition: all 0.4s ease-in-out;
-        box-shadow: 20px 20px 60px #1F2634,
+        box-shadow: 20px 20px 60px #1F2634;
         filter: brightness(1);
     }
 
@@ -185,7 +185,7 @@ const Img = styled.img`
         max-height: 280px;
     }
 `
-const HeroBg = styled.div`
+const PresentationBg = styled.div`
     position: absolute;
     display: flex;
     justify-content: end;
@@ -209,16 +209,16 @@ const HeroBg = styled.div`
     }
 `
 
-const Hero = () => {
+const Presentation = () => {
     return <div id="about">
-        <HeroContainer>
-            <HeroBg>
+        <PresentationContainer>
+            <PresentationBg>
                 <StarCanvas/>
-                <HeroBgAnimation/>
-            </HeroBg>
+                <PresentationBgAnimation/>
+            </PresentationBg>
             <motion.div {...headContainerAnimation}>
-                <HeroInnerContainer>
-                    <HeroLeftContainer>
+                <PresentationInnerContainer>
+                    <PresentationLeftContainer>
                         <motion.div {...headTextAnimation}>
                             <Title>
                                 Hi, I am <br/> {Bio.name}
@@ -239,18 +239,18 @@ const Hero = () => {
                         </motion.div>
                         <ResumeButton>Check Resume</ResumeButton>
 
-                    </HeroLeftContainer>
-                    <HeroRightContainer>
+                    </PresentationLeftContainer>
+                    <PresentationRightContainer>
                         <motion.div {...headContentAnimation}>
                             <Tilt>
                                 <Img src={HeroImg} alt="Samir EL IDRISSI"></Img>
                             </Tilt>
                         </motion.div>
-                    </HeroRightContainer>
-                </HeroInnerContainer>
+                    </PresentationRightContainer>
+                </PresentationInnerContainer>
             </motion.div>
-        </HeroContainer>
+        </PresentationContainer>
     </div>;
 };
 
-export default Hero;
+export default Presentation;

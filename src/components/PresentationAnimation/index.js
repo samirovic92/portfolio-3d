@@ -1,7 +1,7 @@
 import React from 'react';
-import { Div } from './HeroBgAnimationStyle';
+import { Div } from './PresentationBgAnimationStyle';
 
-const HeroBgAnimation = () => (
+const PresentationBgAnimation = () => (
   <Div>
     <svg
       className="BgAnimation__svg"
@@ -363,4 +363,4 @@ const HeroBgAnimation = () => (
   </Div>
 );
 
-export default HeroBgAnimation;
+export default PresentationBgAnimation;

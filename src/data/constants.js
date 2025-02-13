@@ -6,7 +6,7 @@ export const Bio = {
     "Programmer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I have 10 years of experience as a Java Fullstack software developer and hold several certifications, including Java, Spring boot / Spring, Kubernetes, and GCP. I have extensive experience working on projects that utilize microservices architecture (Service Discovery, API Gateway, Event Sourcing, Saga, and CQRS)",
   github: "https://github.com/samirovic92",
   resume:
     "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
