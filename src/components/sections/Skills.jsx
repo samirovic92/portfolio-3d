@@ -119,7 +119,7 @@ const SkillImage = styled.img`
 const Skills = () => {
     const years = (new Date().getFullYear()) - 2015;
     return (
-        <Container>
+        <Container id="Skills">
             <Wrapper>
                 <Title>Skills</Title>
                 <Desc

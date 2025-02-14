@@ -210,7 +210,7 @@ const PresentationBg = styled.div`
 `
 
 const Presentation = () => {
-    return <div id="about">
+    return <div id="About">
         <PresentationContainer>
             <PresentationBg>
                 <StarCanvas/>
