@@ -5,6 +5,7 @@ import {BrowserRouter} from "react-router-dom";
 import Presentation from "./components/sections/Presentation";
 import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
+import Certifications from "./components/sections/Certifications";
 
 const Body = styled.div`
     background-color: ${({theme}) => theme.bg};
