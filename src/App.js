@@ -10,6 +10,7 @@ import EarthCanvas from "./components/canvas/Earth";
 import Contact from "./components/sections/Contact";
 import StarCanvas from "./components/canvas/Stars";
 import React from "react";
+import Footer from "./components/sections/Footer";
 
 const Body = styled.div`
     background-color: ${({theme}) => theme.bg};
@@ -54,6 +55,7 @@ function App() {
                             <EarthCanvas/>
                             <Contact/>
                         </Wrapper>
+                        <Footer />
                     </div>
                 </Body>
             </BrowserRouter>
