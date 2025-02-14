@@ -6,6 +6,7 @@ import Presentation from "./components/sections/Presentation";
 import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
 import Certifications from "./components/sections/Certifications";
+import EarthCanvas from "./components/canvas/Earth";
 
 const Body = styled.div`
     background-color: ${({theme}) => theme.bg};
@@ -24,7 +25,9 @@ function App() {
                     <Presentation/>
                     <Skills/>
                     <Experience/>
-                    <Certifications />
+                    <Certifications/>
+                    <br/>
+                    <EarthCanvas/>
                 </Body>
             </BrowserRouter>
         </ThemeProvider>
