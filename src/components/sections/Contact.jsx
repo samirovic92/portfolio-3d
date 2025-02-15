@@ -115,10 +115,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                process.env.EMAIL_JS_SERVICE_ID,
-                process.env.EMAIL_JS_TEMPLATE_ID,
+                process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+                process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
                 form.current,
-                {publicKey: process.env.EMAIL_JS_PUBLIC_KEY,}
+                {publicKey: process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY,}
             )
             .then(
                 () => alert("Message Sent successfully"),
