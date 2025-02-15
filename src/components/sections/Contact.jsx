@@ -118,10 +118,12 @@ const Contact = () => {
                 process.env.EMAIL_JS_SERVICE_ID,
                 process.env.EMAIL_JS_TEMPLATE_ID,
                 form.current,
-                {publicKey: process.env.EMAIL_JS_PUBLIC_KEY}
+                {
+                    publicKey: process.env.EMAIL_JS_PUBLIC_KEY
+                }
             )
             .then(
-                () => alert("Message Sent"),
+                () => alert("Message Sent successfully"),
                 (error) => alert(error),
             );
     };
