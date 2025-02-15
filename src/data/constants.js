@@ -9,7 +9,7 @@ export const Bio = {
         "I have 10 years of experience as a Java Fullstack software developer and hold several certifications, including Java, Spring boot / Spring, Kubernetes, and GCP. I have extensive experience working on projects that utilize microservices architecture (Service Discovery, API Gateway, Event Sourcing, Saga, and CQRS)",
     github: "https://github.com/samirovic92",
     resume:
-        "https://drive.google.com/file/",
+        "https://drive.google.com/file/d/1qBTz3wAJB9wYlqsb1LTkCGnhVnczxw1L/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/samir-el-idrissi-09167264/",
     twitter: "",
     insta: "",
