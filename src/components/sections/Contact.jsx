@@ -115,10 +115,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'service_hqf92m9',
-                'template_nymzzci',
+                process.env.EMAIL_JS_SERVICE_ID,
+                process.env.EMAIL_JS_TEMPLATE_ID,
                 form.current,
-                {publicKey: 'wgsuD04MtTGhv0dd3',}
+                {publicKey: process.env.EMAIL_JS_PUBLIC_KEY}
             )
             .then(
                 () => alert("Message Sent"),
@@ -135,8 +135,9 @@ const Contact = () => {
                         marginBottom: "40px",
                     }}
                 >
-                    "Any fool can write code that a computer can understand. Good programmers write code that humans can understand", Martin Fowler said.
-                    <br />
+                    "Any fool can write code that a computer can understand. Good programmers write code that humans can
+                    understand", Martin Fowler said.
+                    <br/>
                     Feel free to reach out to me for writing understandable code.
                 </Desc>
                 <ContactForm ref={form} onSubmit={sendEmail}>

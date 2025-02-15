@@ -9,6 +9,11 @@ permissions:
   contents: read
   pull-requests: write
 
+env:
+  EMAIL_JS_SERVICE_ID: ${{ secrets.REACT_APP_SECRET_KEY }}
+  EMAIL_JS_TEMPLATE_ID: ${{ secrets.EMAIL_JS_TEMPLATE_ID }}
+  EMAIL_JS_PUBLIC_KEY: ${{ secrets.EMAIL_JS_PUBLIC_KEY }}
+
 jobs:
   build_and_preview:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
