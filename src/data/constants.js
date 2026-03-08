@@ -204,7 +204,7 @@ export const experiences = [
         role: "Senior Full stack Developer (Java/ Angular / kubernetes)",
         company: "Carrefour",
         date: "February 2025",
-        desc: "Participation au développement de Pick and Pack, un outil de préparation de commandes en magasin pour les trois services de livraison : LEX, CLCV et Drive.",
+        desc: "Participation in the development of Pick and Pack, an in-store order preparation tool for the three delivery services: LEX, CLCV, and Drive",
         skills: [
             "Java (17 & 21)",
             "Spring Boot 3",
